@@ -1,7 +1,9 @@
-require_relative './Player'
+require_relative './player'
+require_relative './cointoss'
+require_relative './gamemodule'
 
 class Casino < Player
-    
+    include Games
     def initialize
         super()
         casino_menu
@@ -15,11 +17,14 @@ class Casino < Player
         menu_selection = gets.to_i
         case menu_selection
         when 1 
-            puts "CALLFILE"
+            game_menu
+            cointoss
         when 2
-            puts "CALLFILE2"
+            game_menu
+            #game-nme
         when 3
-            puts "CALLFILE3"
+            game_menu
+            #game-nme
         else
             puts "Select from THIS list"
         end 
