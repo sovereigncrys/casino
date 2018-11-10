@@ -26,6 +26,7 @@ class Casino < Player
             #game-nme
         else
             puts "Select from THIS list"
+            casino_menu
         end 
 
     end
