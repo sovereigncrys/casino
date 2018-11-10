@@ -11,19 +11,18 @@ class Casino < Player
     
     def casino_menu
         puts "$$$ Menu $$$"
-        puts "1. Crys"
-        puts "2. Emilio"
-        puts "3. Matt"
+        puts "1. The Most Epic Coin Toss"
+        puts "2. Emilio's Sweet Ass Game"
+        puts "3. Matt's Incredibly Hard\nImpossible to Beat Game"
         menu_selection = gets.to_i
         case menu_selection
         when 1 
-            game_menu
-            cointoss
+            coin_toss_game_menu
         when 2
-            game_menu
+            # game_menu
             #game-nme
         when 3
-            game_menu
+            # game_menu
             #game-nme
         else
             puts "Select from THIS list"
