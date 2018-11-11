@@ -18,7 +18,7 @@ module Impossible
 
   def impossible_game
     puts `clear`
-    puts "Welcome #{@name}!\nYou're balance = $#{@wallet}"
+    puts "Welcome #{@name}!\nYour balance = $#{@wallet}"
     puts "Place your bet!"
     bet = gets.strip.to_i
     puts `clear`

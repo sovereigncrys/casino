@@ -18,7 +18,7 @@ end
 
 def cointoss
   puts `clear`
-  puts "Welcome #{@name}\nBalance = #{@wallet}"
+  puts "Welcome #{@name}\nBalance = $#{@wallet}"
   puts "Place your bet!"
   bet = gets.strip.to_i
   puts `clear`
