@@ -2,10 +2,12 @@ require_relative './player'
 require_relative './cointoss'
 require_relative './gamemodule'
 require_relative './impossible'
+require_relative './roulette'
 
 class Casino < Player
     include Games
     include Impossible
+    include Roulette
     def initialize
         super()
         casino_menu

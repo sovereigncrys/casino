@@ -2,6 +2,7 @@ class Player
 
     attr_accessor :name, :wallet
     def initialize
+        puts `clear`
         enter_name
         bank
         
