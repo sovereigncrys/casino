@@ -18,7 +18,7 @@ class Casino < Player
     def casino_menu
         puts "$$$ Menu $$$"
         puts "1. The Most Epic Coin Toss"
-        puts "2. Emilio's Sweet Ass Game"
+        puts "2. Rock Paper Scissor"
         puts "3. Matt's Incredibly Hard\nImpossible to Beat Game"
         puts "4. Ruby's Really Ridiculous Roulette"
         puts "5. Quit"

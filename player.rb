@@ -8,7 +8,7 @@ class Player
         
     end
     def enter_name
-        puts "Enter your name"
+        puts "Enter your name:"
         @name = gets.strip
         puts `clear`
         puts @name
