@@ -3,11 +3,13 @@ require_relative './cointoss'
 require_relative './gamemodule'
 require_relative './impossible'
 require_relative './roulette'
+require_relative './rps'
 
 class Casino < Player
     include Games
     include Impossible
     include Roulette
+    include Rpsgame
     def initialize
         super()
         casino_menu
@@ -25,8 +27,7 @@ class Casino < Player
         when 1 
             coin_toss_game_menu
         when 2
-            # game_menu
-            #game-nme
+            rps_game_menu
         when 3
             impossible_game_menu
         when 4
