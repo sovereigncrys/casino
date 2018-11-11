@@ -1,9 +1,11 @@
 require_relative './player'
 require_relative './cointoss'
 require_relative './gamemodule'
+require_relative './impossible'
 
 class Casino < Player
     include Games
+    include Impossible
     def initialize
         super()
         casino_menu
@@ -14,6 +16,8 @@ class Casino < Player
         puts "1. The Most Epic Coin Toss"
         puts "2. Emilio's Sweet Ass Game"
         puts "3. Matt's Incredibly Hard\nImpossible to Beat Game"
+        puts "4. Ruby's Really Ridiculous Roulette"
+        puts "5. Quit"
         menu_selection = gets.to_i
         case menu_selection
         when 1 
@@ -22,8 +26,11 @@ class Casino < Player
             # game_menu
             #game-nme
         when 3
-            # game_menu
-            #game-nme
+            impossible_game_menu
+        when 4
+            roulette_menu
+        when 5
+            exit
         else
             puts "Select from THIS list"
             casino_menu
