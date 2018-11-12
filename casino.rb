@@ -21,7 +21,8 @@ class Casino < Player
         puts "2. Rock Paper Scissor"
         puts "3. Matt's Incredibly Hard\nImpossible to Beat Game"
         puts "4. Ruby's Really Ridiculous Roulette"
-        puts "5. Quit"
+        puts "5. Slot Machine"
+        puts "6. Quit"
         menu_selection = gets.to_i
         case menu_selection
         when 1 
@@ -33,6 +34,8 @@ class Casino < Player
         when 4
             roulette_menu
         when 5
+            slot_machine_game_menu
+        when 6
             exit
         else
             puts "Select from THIS list"
