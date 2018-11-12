@@ -1,4 +1,4 @@
-module Games
+module Slot_Machine_Game
 
     def slot_machine_game_menu
         puts "Welcome to The Game!"
